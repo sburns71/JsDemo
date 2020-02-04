@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate MPG</title>
+        <link rel="stylesheet" href="mpg.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Calculate Miles Per Gallon</h1>
+        Enter Miles Driven: <input type="number" id="milesIn"> <br>
+        Enter Gallons of Fuel Used: <input type="number" id="fuelIn"> 
+        
+        <button onclick="create()"> Calculate </button><br>
+        <p id="t1"> MPG: </p>
+        <h2 id="t2"> MPG: </h2>
+        
+        
+        
+   
+    </main>
+    <script>
+        function create() {
+            
+         
+        var m = document.getElementById("milesIn").value;
+        var g = document.getElementById("fuelIn").value;
+        var mpg = m/g;
+        document.getElementById("t1").innerHTML="MPG: " + mpg; 
+        document.getElementById("t2").innerHTML="MPG: " + mpg; 
+            
+        }
+            
+    </script>
+</body>
+</html>
